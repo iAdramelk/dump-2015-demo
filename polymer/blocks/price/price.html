@@ -1,0 +1,18 @@
+<link rel="import" href="../../bower_components/polymer/polymer.html">
+
+<polymer-element name="x-price" attributes="from to min max" noscript>
+  <template>
+    <link rel="stylesheet" href="price.css">
+    <div class="range">
+      <div class="group">
+        <label class="title">От:</label>
+        <input type="text" class="field" placeholder={{min}} value={{from}} />
+      </div>
+      <div class="group">
+        <label class="title">До:</label>
+        <input type="text" class="field" placeholder={{max}} value={{to}} />
+      </div>
+    </div>
+    <div class="show">Показать</div>
+  </template>
+</polymer-element>

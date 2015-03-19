@@ -1,0 +1,27 @@
+<link rel="import" href="../../bower_components/polymer/polymer.html">
+
+<polymer-element name="x-menu-item" attributes="current text href" noscript>
+  <template>
+      <link rel="stylesheet" href="menu-item.css">
+
+      <a href="{{href}}" class="link">{{text}}</a>
+  </template>
+</polymer-element>
+
+<polymer-element name="x-menu" attributes="items">
+
+  <template>
+    <link rel="stylesheet" href="menu.css">
+    <div class="content">
+      <template repeat="{{ item in items }}">
+        <template if="{{ item.current }}">
+          <x-menu-item href="{{item.href}}" text="{{item.text}}" current />
+        </template>
+        <template if="{{ !item.current }}">
+          <x-menu-item href="{{item.href}}" text="{{item.text}}" />
+        </template>
+      </template>
+    </div>
+  </template>
+  <script src="menu.js"></script>
+</polymer-element>

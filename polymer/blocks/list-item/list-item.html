@@ -1,0 +1,18 @@
+<link rel="import" href="../../bower_components/polymer/polymer.html">
+
+<polymer-element name="x-list-item" attributes="href image xtitle price">
+  <template>
+    <link rel="stylesheet" href="list-item.css">
+
+    <a href={{href}}><img src={{image}} class="image" /></a>
+    <div class="meta">
+      <div class="price" id="price">{{formattedPrice}}</div>
+      <div class="title"><a href={{href}}>{{xtitle}}</a></div>
+      <div class="description">
+        <content></content>
+      </div>
+    </div>
+  </template>
+
+  <script src="list-item.js"></script>
+</polymer-element>

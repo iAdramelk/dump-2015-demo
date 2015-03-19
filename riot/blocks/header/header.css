@@ -1,0 +1,46 @@
+.header {
+  flex-grow: 0;
+  overflow: hidden;
+  width: 1120px;
+  margin: 0 auto;
+  padding: 36px 0 26px;
+}
+
+.header__subtitle {
+  float: left;
+  font-size: 16px;
+  color: $comment;
+}
+
+.header__title {
+  float: left;
+  clear: left;
+  padding-top: 18px;
+  font-size: 64px;
+}
+
+.header__actions {
+  float: right;
+}
+
+.header__action {
+  display: inline-block;
+  font-size: 16px;
+}
+
+.header__action_signup:before {
+  content: "/";
+  padding: 0 3px;
+  font-size: 16px;
+  color: $comment;
+}
+
+.header__action_basket {
+  padding-left: 20px;
+}
+
+.header__search {
+  float: right;
+  width: 740px;
+  padding-top: 32px;
+}

@@ -1,0 +1,50 @@
+:host {
+  display: block;
+  -webkit-box-flex: 0;
+  -webkit-flex-grow: 0;
+  -ms-flex-positive: 0;
+  flex-grow: 0;
+  overflow: hidden;
+  width: 1120px;
+  margin: 0 auto;
+  padding: 36px 0 26px;
+}
+
+.subtitle {
+  float: left;
+  font-size: 16px;
+  color: #808080;
+}
+
+.title {
+  float: left;
+  clear: left;
+  padding-top: 18px;
+  font-size: 64px;
+}
+
+.actions {
+  float: right;
+}
+
+.action {
+  display: inline-block;
+  font-size: 16px;
+}
+
+.action_signup:before {
+  content: "/";
+  padding: 0 3px;
+  font-size: 16px;
+  color: #808080;
+}
+
+.action_basket {
+  padding-left: 20px;
+}
+
+.search {
+  float: right;
+  width: 740px;
+  padding-top: 32px;
+}

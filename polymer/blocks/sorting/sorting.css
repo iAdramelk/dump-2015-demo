@@ -1,0 +1,8 @@
+:host {
+  display: block;
+}
+
+.title {
+  display: inline-block;
+  padding: 6px 0 4px;
+}

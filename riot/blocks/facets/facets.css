@@ -1,0 +1,8 @@
+.facets {
+  border: 1px solid $borders;
+}
+
+
+.facets x-facet + x-facet .facet {
+  border-top: 1px solid $borders;
+}

@@ -1,0 +1,30 @@
+{
+  "name": "react-demo",
+  "description": "Демо компонентного подхода к верстке с помощью React.js",
+  "version": "0.0.1",
+  "repository": {},
+  "devDependencies": {
+    "bower": "1.3.12",
+    "browser-sync": "^2.2.1",
+    "react": "^0.12.2",
+
+    "gulp": "^3.8.11",
+    "gulp-cached": "^1.0.2",
+    "gulp-concat": "^2.5.2",
+    "gulp-load-plugins": "^0.8.1",
+    "gulp-minify-css": "^0.5.1",
+    "gulp-plumber": "^0.6.6",
+    "gulp-postcss": "^4.0.3",
+    "gulp-remember": "^0.3.0",
+    "gulp-render": "^0.2.2",
+    "gulp-sourcemaps": "^1.5.0",
+    "gulp-watch": "^4.1.1",
+
+    "autoprefixer-core": "^5.1.7",
+    "postcss-simple-vars": "^0.2.4"
+  },
+  "scripts": {
+    "postinstall": "npm run deps",
+    "deps": "bower install --non-interactive"
+  }
+}

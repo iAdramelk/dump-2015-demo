@@ -1,0 +1,16 @@
+<link rel="import" href="../../bower_components/polymer/polymer.html">
+
+<polymer-element name="x-breadcrumbs" noscript>
+  <link rel="stylesheet" href="breadcrumbs.css">
+  <template>
+    <content></content>
+  </template>
+</polymer-element>
+
+<polymer-element name="x-breadcrumbs-item" attributes="href text" noscript>
+  <template>
+    <link rel="stylesheet" href="breadcrumbs-item.css">
+
+    <a href="{{href}}" class="link">{{text}}</a>
+  </template>
+</polymer-element>

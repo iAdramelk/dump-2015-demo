@@ -1,0 +1,12 @@
+:host {
+  display: block;
+  -webkit-box-flex: 0;
+  -webkit-flex-grow: 0;
+  -ms-flex-positive: 0;
+  flex-grow: 0;
+  padding: 48px;
+  background: #ddd;
+  font-size: 16px;
+  text-align: center;
+  color: grey;
+}

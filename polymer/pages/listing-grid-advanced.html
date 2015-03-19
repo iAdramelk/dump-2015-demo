@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Коктельные платья</title>
+    <meta charset='UTF-8'>
+    <script src='../bower_components/webcomponentsjs/webcomponents.js'></script>
+    <link rel='import' href='../build/base.html'>
+  </head>
+  <body unresolved>
+    <x-page>
+      <x-header>
+        <x-search action='#' query='Всякая фигня' />
+      </x-header>
+      <x-menu items='[{"href":"#","text":"Кареты","current":false},{"href":"#","text":"Лошади","current":false},{"href":"#","text":"Кучеры","current":false},{"href":"#","text":"Лакеи","current":false},{"href":"#","text":"Платья","current":true},{"href":"#","text":"Туфли","current":false}]'></x-menu>
+      <x-content>
+        <x-listing xtitle='Коктельные платья'>
+          <x-breadcrumbs>
+            <x-breadcrumbs-item href='#' text='Платья'></x-breadcrumbs-item>
+            <x-breadcrumbs-item href='#' text='Платья бальные'></x-breadcrumbs-item>
+          </x-breadcrumbs>
+          <x-aticle-lead text='' href='#'></x-aticle-lead>
+          <x-listing-main advanced>
+            <x-preview-item image='../tmp/placeholder-01.jpg' href='#' xtitle='Платье Mary Mea' price='2700'></x-preview-item>
+            <x-preview-item image='../tmp/placeholder-02.jpg' href='#' xtitle='Платье Goddess London' price='4700'></x-preview-item>
+            <x-banner href='#' text='Лучшие мыши на рынке! Оптом дешевле!' grid></x-banner>
+            <x-preview-item image='../tmp/placeholder-03.jpg' href='#' xtitle='Платье People' price='1999'></x-preview-item>
+            <x-banner href='#' text='Лучшие тараканы!' grid></x-banner>
+            <x-preview-item image='../tmp/placeholder-04.jpg' href='#' xtitle='Платье BSB' price='2000'></x-preview-item>
+            <x-preview-item image='../tmp/placeholder-05.jpg' href='#' xtitle='Платье Key' price='2750'></x-preview-item>
+            <x-preview-item image='../tmp/placeholder-06.jpg' href='#' xtitle='Платье V&V' price='1700'></x-preview-item>
+            <x-preview-item image='../tmp/placeholder-07.jpg' href='#' xtitle='Платье Prio' price='5520'></x-preview-item>
+            <x-preview-item image='../tmp/placeholder-08.jpg' href='#' xtitle='Платье Fever' price='2320'></x-preview-item>
+            <x-banner href='#' text='А туфли у нас вообще отпад!' grid></x-banner>
+            <x-preview-item image='../tmp/placeholder-09.jpg' href='#' xtitle='Платье Verezo' price='8700'></x-preview-item>
+            <x-preview-item image='../tmp/placeholder-10.jpg' href='#' xtitle='Платье Tops&Tops' price='2190'></x-preview-item>
+            <x-preview-item image='../tmp/placeholder-11.jpg' href='#' xtitle='Платье Richardi' price='3000'></x-preview-item>
+            <x-preview-item image='../tmp/placeholder-12.jpg' href='#' xtitle='Платье T&M' price='701'></x-preview-item>
+          </x-listing-main>
+          <x-listing-nav>
+            <x-categories items='[{"level":"1","href":"#","text":"Платья","current":false},{"level":"2","href":"#","text":"Платья бальные","current":false},{"level":"3","href":"#","text":"Коктельные платья","current":true},{"level":"3","href":"#","text":"Клубные платья","current":false},{"level":"3","href":"#","text":"Вечерние платья","current":false},{"level":"3","href":"#","text":"Выпускные платья","current":false}]'></x-categories>
+            <x-help items='[{"href":"#","text":"Доставка"},{"href":"#","text":"Оплата"},{"href":"#","text":"Бесплатная примерка"},{"href":"#","text":"Возврат"}]' xtitle='Полезные ссылки'></x-help>
+          </x-listing-nav>
+        </x-listing>
+      </x-content>
+      <x-menu items='[{"href":"#","text":"Кареты","current":false},{"href":"#","text":"Лошади","current":false},{"href":"#","text":"Кучеры","current":false},{"href":"#","text":"Лакеи","current":false},{"href":"#","text":"Платья","current":true},{"href":"#","text":"Туфли","current":false}]'></x-menu>
+      <x-footer />
+    </x-page>
+  </body>
+</html>

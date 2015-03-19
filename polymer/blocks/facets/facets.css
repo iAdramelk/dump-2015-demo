@@ -1,0 +1,9 @@
+:host {
+  display: block;
+  border: 1px solid #808080;
+}
+
+polyfill-next-selector { content: ':host > x-facet + x-facet' }
+::content x-facet + x-facet {
+  border-top: 1px solid #808080;
+}

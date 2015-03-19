@@ -1,0 +1,124 @@
+.listing {}
+
+.listing__header {
+  overflow: hidden;
+  margin: 40px 0;
+}
+
+.listing__breadcrumbs {}
+
+.listing__title {
+  margin: 16px 0 31px;
+  font-size: 36px;
+  font-weight: normal;
+}
+
+.listing__sorting {
+  float: left;
+}
+
+.listing__view-mode {
+  float: right;
+  padding-right: 285px;
+}
+
+.listing__content {
+  display: flex;
+  align-items: flex-start;
+  padding-bottom: 40px;
+}
+
+.listing__main {
+  flex-grow: 1;
+}
+
+.listing__nav {
+  flex-shrink: 0;
+  box-sizing: border-box;
+  width: 265px;
+}
+
+
+/* Childs Nav */
+
+.listing__nav .categories + .facets {
+  border-top: none;
+}
+
+.listing__nav .categories + .help {
+  margin-top: 20px;
+}
+
+.listing__nav .preview-item + .preview-item {
+  margin-top: 20px;
+}
+
+
+/* Childs Items */
+
+
+.listing__main .article {
+  margin-right: 60px;
+}
+.listing__main .list-item {
+  margin-right: 20px;
+}
+
+.listing__main .list-item:first-of-type {
+  padding-top: 0;
+}
+
+.listing__main .list-item + .list-item {
+  border-top: 1px solid $borders;
+}
+
+.listing__main .banner {
+  clear: both;
+  margin: 0 20px 0 0;
+}
+
+.listing__main .banner + .list-item {
+
+}
+
+.listing__main .banner_grid,
+.listing__main .preview-item {
+  clear: none;
+  float: left;
+  margin: 0 20px 20px 0;
+}
+
+.listing__main .preview-item + .banner {
+  margin-bottom: 20px;
+}
+
+.listing__main_advanced-items > *:nth-of-type(12n+1),
+.listing__main_advanced-items > *:nth-of-type(12n+6),
+.listing__main_advanced-items > *:nth-of-type(12n+7),
+.listing__main_advanced-items > *:nth-of-type(12n+12) {
+  width: 550px;
+  max-height: 726px;
+  overflow: hidden;
+}
+
+.listing__main_advanced-items > *:nth-of-type(12n+1),
+.listing__main_advanced-items > *:nth-of-type(12n+4),
+.listing__main_advanced-items > *:nth-of-type(12n+7)
+.listing__main_advanced-items > *:nth-of-type(12n+10) {
+  clear: both
+}
+
+.listing__main_advanced-items > *:nth-of-type(12n+4),
+.listing__main_advanced-items > *:nth-of-type(12n+10) {
+  margin-bottom: 353px;
+}
+
+.listing__main_advanced-items > *:nth-of-type(12n+5),
+.listing__main_advanced-items > *:nth-of-type(12n+11) {
+  margin: 373px 0 0 -285px;
+}
+
+.listing__main_advanced-items > *:nth-child(12n+4):last-of-type,
+.listing__main_advanced-items > *:nth-child(12n+10):last-of-type {
+  margin-bottom: 20px;
+}

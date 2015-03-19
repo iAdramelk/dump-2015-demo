@@ -1,0 +1,11 @@
+<link rel="import" href="../../bower_components/polymer/polymer.html">
+
+<polymer-element name="x-search" attribute="action value" noscript>
+  <template>
+    <link rel="stylesheet" href="search.css">
+    <form action=" {{action}}" class="form">
+      <input type="search" placeholder="платье бальное" class="query" value=" {{value}}" />
+      <input type="submit" value="Найти" class="submit" />
+    </form>
+  </template>
+</polymer-element>

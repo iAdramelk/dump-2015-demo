@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <title>Коктельные платья</title>
+      <meta charset="UTF-8">
+      <link rel="stylesheet" href="../build/style.css">
+      <script src="../build/script.js"></script>
+    </head>
+    <body>
+      <x-page>
+        <x-header>
+          <x-search action="{data.search.action}" query="{data.search.query}"></x-search>
+        </x-header>
+        <x-menu items="{data.menu.items}"></x-menu>
+        <x-content>
+          <x-listing>
+            <x-listing-header>
+              <x-listing-breadcrumbs>
+                <x-breadcrumbs>
+                  <x-breadcrumbs-item href="{data.breadcrumbs[0].href}" text="{data.breadcrumbs[0].text}"></x-breadcrumbs-item>
+                  <breadcrumbs-item href="{data.breadcrumbs[1].href}" text="{data.breadcrumbs[1].text}"></x-breadcrumbs-item>
+                </x-breadcrumbs>
+              </x-listing-breadcrumbs>
+              <x-listing-title title="{data.title}"></x-listing-title>
+            </x-listing-header>
+            <x-listing-content>
+              <x-listing-main>
+                <x-article text="{data.article.text}"></x-article>
+              </x-listing-main>
+              <x-listing-nav>
+                <x-preview-item href="{data.goods[0].href}" title="{data.goods[0].title}" image="{data.goods[0].image}" price="{data.goods[0].price}"></x-preview-item>
+                <x-preview-item href="{data.goods[1].href}" title="{data.goods[1].title}" image="{data.goods[1].image}" price="{data.goods[1].price}"></x-preview-item>
+                <x-preview-item href="{data.goods[2].href}" title="{data.goods[2].title}" image="{data.goods[2].image}" price="{data.goods[2].price}"></x-preview-item>
+              </x-listing-nav>
+            </x-listing-content>
+          </x-listing>
+        </x-content>
+        <x-menu items="{data.menu.items}"></x-menu>
+        <x-footer />
+      </x-page>
+
+      <script>riot.mount('*');</script>
+    </body>
+  </html>

@@ -1,0 +1,41 @@
+<link rel="import" href="../../bower_components/polymer/polymer.html">
+
+<polymer-element name="x-listing" attributes="xtitle" noscript>
+  <template>
+    <link rel="stylesheet" href="listing.css">
+    <div class="header">
+      <div class="breadcrumbs">
+        <content select="x-breadcrumbs"></content>
+      </div>
+      <h1 class="title">{{xtitle}}</h1>
+      <div class="sorting">
+        <content select="x-sorting, x-article-lead"></content>
+      </div>
+      <div class="view-mode">
+        <content select="x-view-mode"></content>
+      </div>
+    </div>
+    <div class="content">
+      <div class="items">
+        <content select="x-listing-main"></content>
+      </div>
+      <div class="nav">
+        <content select="x-listing-nav"></content>
+      </div>
+    </div>
+  </template>
+</polymer-element>
+
+<polymer-element name="x-listing-main" noscript>
+  <template>
+    <link rel="stylesheet" href="listing-main.css">
+    <content></content>
+  </template>
+</polymer-element>
+
+<polymer-element name="x-listing-nav" noscript>
+  <template>
+    <link rel="stylesheet" href="listing-nav.css">
+    <content></content>
+  </template>
+</polymer-element>

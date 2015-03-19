@@ -1,0 +1,30 @@
+.categories {
+  padding: 12px 20px;
+  border: 1px solid $borders;
+}
+
+.categories__title {
+  margin-bottom: 12px;
+  font-weight: bold;
+}
+
+.categories__item {
+}
+
+.categories__item_level_2 {
+  margin-left: 20px;
+}
+
+.categories__item_level_3 {
+  margin-left: 40px;
+}
+
+.categories__link {
+  display: inline-block;
+  padding: 6px 5px 4px;
+}
+
+.categories__link.is-current {
+  background: $bannerBg;
+  color: $bannerText;
+}

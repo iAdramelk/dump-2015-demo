@@ -1,0 +1,21 @@
+:host {
+  display: block;
+}
+
+.link {
+  display: inline-block;
+  padding: 6px 5px 4px;
+}
+
+.link_level_2 {
+  margin-left: 20px;
+}
+
+.link_level_3 {
+  margin-left: 40px;
+}
+
+.link.is-current {
+  background: #999;
+  color: #fff;
+}

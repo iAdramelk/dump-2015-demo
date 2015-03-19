@@ -1,0 +1,53 @@
+:host {
+  display: block;
+}
+
+.header {
+  overflow: hidden;
+  margin: 40px 0;
+}
+
+.breadcrumbs {}
+
+.title {
+  margin: 16px 0 31px;
+  font-size: 36px;
+  font-weight: normal;
+}
+
+.sorting {
+  float: left;
+}
+
+.view-mode {
+  float: right;
+  padding-right: 285px;
+}
+
+.content {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  padding-bottom: 40px;
+}
+
+.items {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+
+}
+
+.nav {
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  box-sizing: border-box;
+  width: 265px;
+}

@@ -1,0 +1,20 @@
+<link rel="import" href="../../bower_components/polymer/polymer.html">
+
+<polymer-element name="x-help" attributes="items xtitle">
+  <template>
+    <link rel="stylesheet" href="help.css">
+    <div class="title">{{xtitle}}</div>
+    <template repeat="{{ item in items }}">
+      <x-help-item href="{{item.href}}" text="{{item.text}}" />
+    </template>
+  </template>
+  <script src="help.js"></script>
+</polymer-element>
+
+<polymer-element name="x-help-item" attributes="href text" noscript>
+  <template>
+      <link rel="stylesheet" href="help-item.css">
+
+      <a href="{{href}}" class="link">{{text}}</a>
+  </template>
+</polymer-element>

@@ -1,0 +1,34 @@
+:host {
+  display: block;
+  clear: both;
+  overflow: hidden;
+  position: relative;
+  padding: 20px 0;
+}
+
+.image {
+  display: block;
+  max-height: 100px;
+  margin-right: 20px;
+  float: left;
+}
+
+.price {
+  float: right;
+}
+
+
+.meta {
+  margin-left: 85px;
+}
+
+.title {
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.description {
+  padding-top: 5px;
+  font-size: 14px;
+  line-height: 19px;
+}

@@ -1,0 +1,28 @@
+{
+  "name": "riot-demo",
+  "description": "Демо компонентного подхода к верстке с помощью Riot.js",
+  "version": "0.0.1",
+  "repository": {},
+
+  "devDependencies": {
+    "bower": "1.3.12",
+    "browser-sync": "^2.2.1",
+
+    "gulp": "^3.8.11",
+    "gulp-add-src": "^0.2.0",
+    "gulp-concat": "^2.5.2",
+    "gulp-header": "^1.2.2",
+    "gulp-load-plugins": "^0.8.1",
+    "gulp-plumber": "^0.6.6",
+    "gulp-postcss": "^4.0.3",
+    "gulp-riot": "^0.2.12",
+    "gulp-watch": "^4.1.1",
+
+    "autoprefixer-core": "^5.1.7",
+    "postcss-simple-vars": "^0.2.4"
+  },
+  "scripts": {
+    "postinstall": "npm run deps",
+    "deps": "bower install --non-interactive"
+  }
+}

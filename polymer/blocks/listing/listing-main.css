@@ -1,0 +1,58 @@
+:host ::content x-article {
+  margin-right: 60px;
+}
+
+:host ::content x-list-item {
+  margin-right: 20px;
+}
+
+:host ::content x-list-item:first-of-type {
+  padding-top: 0;
+}
+
+:host ::content x-list-item + x-list-item {
+  border-top: 1px solid #808080;
+}
+
+:host ::content x-banner {
+  clear: both;
+  margin: 0 20px 0 0;
+}
+
+:host ::content x-banner[grid],
+:host ::content x-preview-item {
+  clear: none;
+  float: left;
+  margin: 0 20px 20px 0;
+}
+
+:host ::content x-preview-item + x-banner {
+  margin-bottom: 20px;
+}
+
+:host([advanced]) ::content > *:nth-child(12n+1),
+:host([advanced]) ::content > *:nth-child(12n+6),
+:host([advanced]) ::content > *:nth-child(12n+7),
+:host([advanced]) ::content > *:nth-child(12n+12) {
+  width: 550px;
+  max-height: 726px;
+  overflow: hidden;
+}
+
+:host([advanced]) ::content > *:nth-child(12n+1),
+:host([advanced]) ::content > *:nth-child(12n+4),
+:host([advanced]) ::content > *:nth-child(12n+7)
+:host([advanced]) ::content > *:nth-child(12n+10) {
+  clear: both;
+}
+
+:host([advanced]) ::content > *:nth-child(12n+4),
+:host([advanced]) ::content > *:nth-child(12n+10) {
+  margin-bottom: 353px;
+  margin-bottom: 20px;
+}
+
+:host([advanced]) ::content > *:nth-child(12n+5),
+:host([advanced]) ::content > *:nth-child(12n+11) {
+  margin: 373px 0 0 -285px;
+}

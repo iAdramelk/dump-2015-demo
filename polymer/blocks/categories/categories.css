@@ -1,0 +1,10 @@
+:host {
+  display: block;
+  padding: 12px 20px;
+  border: 1px solid #808080;
+}
+
+.title {
+  margin-bottom: 12px;
+  font-weight: bold;
+}

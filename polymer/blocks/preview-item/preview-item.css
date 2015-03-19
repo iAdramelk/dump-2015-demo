@@ -1,0 +1,28 @@
+:host {
+  display: block;
+  position: relative;
+  width: 265px;
+}
+
+:host(:hover) {
+  outline: 3px solid #00e;
+}
+
+.image {
+  display: block;
+  max-width: 100%;
+}
+
+.meta {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 10px;
+  background: rgba(255,255,255,.5);
+}
+
+.title {
+  margin-bottom: 5px;
+  color: #333;
+}

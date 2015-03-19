@@ -1,0 +1,31 @@
+.menu {
+  background: $comment;
+}
+
+.menu__content {
+  display: flex;
+  width: 1120px;
+  margin: 0 auto;
+  border-left: 1px solid #999;
+}
+
+.menu__item {
+  border-right: 1px solid #999;
+}
+
+.menu__link {
+  display: block;
+  padding: 20px 20px 16px;
+  text-decoration: none;
+  color: #fff;
+}
+
+.menu__link:hover {
+  color: $text;
+  background: #ddd;
+}
+
+.menu__link.is-current {
+  color: $text;
+  background: $background;
+}

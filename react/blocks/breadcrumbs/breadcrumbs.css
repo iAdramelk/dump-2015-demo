@@ -1,0 +1,12 @@
+.breadcrumbs {}
+
+.breadcrumbs__item {
+  display: inline-block;
+}
+
+.breadcrumbs__link:after {
+  content: "/";
+  display: inline-block;
+  padding: 0 3px;
+  color: $comment;
+}

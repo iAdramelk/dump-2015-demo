@@ -1,0 +1,8 @@
+:host {
+  display: block;
+}
+
+.link {
+  display: inline-block;
+  padding: 6px 5px 4px;
+}

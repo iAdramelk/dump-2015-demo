@@ -1,0 +1,33 @@
+:host {
+  display: block;
+}
+
+.title {
+  padding: 12px 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.title:before {
+  content: url('facet__arrow.svg');
+  display: inline-block;
+  position: relative;
+  top: 1px;
+  margin-right: 10px;
+}
+
+.content {
+  padding: 8px 20px 12px;
+}
+
+:host([closed]) .title:before {
+  top: 0;
+  left: 1px;
+  -webkit-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+}
+
+:host([closed="true"]) .content {
+  display: none;
+}

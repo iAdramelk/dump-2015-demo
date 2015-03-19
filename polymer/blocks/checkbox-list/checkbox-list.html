@@ -1,0 +1,39 @@
+<link rel="import" href="../../bower_components/polymer/polymer.html">
+
+<polymer-element name="x-checkbox-list" attributes="items limit">
+  <template>
+    <link rel="stylesheet" href="checkbox-list.css">
+
+    <div class="list">
+      <template repeat="{{ item in shownItems }}">
+        <template if={{item.selected}}>
+          <x-checkbox-list-item href="{{item.href}}" text="{{item.text}}" selected></x-checkbox-list-item>
+        </template>
+        <template if={{!item.selected}}>
+          <x-checkbox-list-item href="{{item.href}}" text="{{item.text}}"></x-checkbox-list-item>
+        </template>
+      </template>
+    </div>
+    <template if="{{ showMore }}">
+      <x-checkbox-list-more counter="{{counter}}"></x-checkbox-list-more>
+    </template>
+
+  </template>
+
+  <script src="checkbox-list.js"></script>
+
+</polymer-element>
+
+<polymer-element name="x-checkbox-list-item" attributes="href text selected" noscript>
+  <template>
+      <link rel="stylesheet" href="checkbox-list-item.css">
+      <a href="{{href}}" class="link">{{text}}</a>
+  </template>
+</polymer-element>
+
+<polymer-element name="x-checkbox-list-more" attributes="counter" noscript>
+  <template>
+      <link rel="stylesheet" href="checkbox-list-more.css">
+      Еще {{counter}}…
+  </template>
+</polymer-element>

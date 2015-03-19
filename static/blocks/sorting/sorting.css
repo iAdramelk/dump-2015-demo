@@ -1,0 +1,21 @@
+.sorting {}
+
+.sorting__title {
+  display: inline-block;
+  padding: 6px 0 4px;
+}
+
+.sorting__item {
+  display: inline-block;
+  margin: 0 3px;
+}
+
+.sorting__link {
+  display: block;
+  padding: 6px 5px 4px;
+}
+
+.sorting__link.is-current {
+  background: $bannerBg;
+  color: $bannerText;
+}

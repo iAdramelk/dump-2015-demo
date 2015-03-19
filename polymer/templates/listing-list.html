@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Коктельные платья</title>
+    <meta charset='UTF-8'>
+    <script src='../bower_components/webcomponentsjs/webcomponents.js'></script>
+    <link rel='import' href='../build/base.html'>
+  </head>
+  <body unresolved>
+    <x-page>
+      <x-header>
+        <x-search action='<%= data.search.action %>' query='<%= data.search.query %>' />
+      </x-header>
+      <x-menu items='<%= JSON.stringify(data.menu.items) %>'></x-menu>
+      <x-content>
+        <x-listing xtitle='<%= data.title %>'>
+          <x-breadcrumbs>
+            <x-breadcrumbs-item href='<%= data.breadcrumbs[0].href %>' text='<%= data.breadcrumbs[0].text %>'></x-breadcrumbs-item>
+            <x-breadcrumbs-item href='<%= data.breadcrumbs[1].href %>' text='<%= data.breadcrumbs[1].text %>'></x-breadcrumbs-item>
+          </x-breadcrumbs>
+          <x-sorting>
+            <x-sorting-item href='<%= data.sorting[0].href %>' text='<%= data.sorting[0].text %>' current></x-sorting-item>
+            <x-sorting-item href='<%= data.sorting[1].href %>' text='<%= data.sorting[1].text %>'></x-sorting-item>
+            <x-sorting-item href='<%= data.sorting[2].href %>' text='<%= data.sorting[2].text %>'></x-sorting-item>
+          </x-sorting>
+          <x-view-mode>
+            <x-view-mode-item href='<%= data.viewMode[0].href %>' text='<%= data.viewMode[0].text %>'></x-view-mode-item>
+            <x-view-mode-item href='<%= data.viewMode[1].href %>' text='<%= data.viewMode[1].text %>' current></x-view-mode-item>
+          </x-view-mode>
+          <x-listing-main>
+            <x-list-item image='<%= data.goods[0].image %>' href='<%= data.goods[0].href %>' xtitle='<%= data.goods[0].title %>' price='<%= data.goods[0].price %>'>
+              <%= data.goods[0].description %>
+            </x-list-item>
+            <x-list-item image='<%= data.goods[1].image %>' href='<%= data.goods[1].href %>' xtitle='<%= data.goods[1].title %>' price='<%= data.goods[1].price %>'>
+              <%= data.goods[1].description %>
+            </x-list-item>
+            <x-list-item image='<%= data.goods[2].image %>' href='<%= data.goods[2].href %>' xtitle='<%= data.goods[2].title %>' price='<%= data.goods[2].price %>'>
+              <%= data.goods[2].description %>
+            </x-list-item>
+            <x-list-item image='<%= data.goods[3].image %>' href='<%= data.goods[3].href %>' xtitle='<%= data.goods[3].title %>' price='<%= data.goods[3].price %>'>
+              <%= data.goods[3].description %>
+            </x-list-item>
+            <x-list-item image='<%= data.goods[4].image %>' href='<%= data.goods[4].href %>' xtitle='<%= data.goods[4].title %>' price='<%= data.goods[4].price %>'>
+              <%= data.goods[4].description %>
+            </x-list-item>
+            <x-list-item image='<%= data.goods[5].image %>' href='<%= data.goods[5].href %>' xtitle='<%= data.goods[5].title %>' price='<%= data.goods[5].price %>'>
+              <%= data.goods[5].description %>
+            </x-list-item>
+            <x-banner href='<%= data.banners[0].href %>' text='<%= data.banners[0].text %>'></x-banner>
+            <x-list-item image='<%= data.goods[6].image %>' href='<%= data.goods[6].href %>' xtitle='<%= data.goods[6].title %>' price='<%= data.goods[6].price %>'>
+              <%= data.goods[6].description %>
+            </x-list-item>
+            <x-list-item image='<%= data.goods[7].image %>' href='<%= data.goods[7].href %>' xtitle='<%= data.goods[7].title %>' price='<%= data.goods[7].price %>'>
+              <%= data.goods[7].description %>
+            </x-list-item>
+            <x-list-item image='<%= data.goods[8].image %>' href='<%= data.goods[8].href %>' xtitle='<%= data.goods[8].title %>' price='<%= data.goods[8].price %>'>
+              <%= data.goods[8].description %>
+            </x-list-item>
+            <x-list-item image='<%= data.goods[9].image %>' href='<%= data.goods[9].href %>' xtitle='<%= data.goods[9].title %>' price='<%= data.goods[9].price %>'>
+              <%= data.goods[9].description %>
+            </x-list-item>
+            <x-list-item image='<%= data.goods[10].image %>' href='<%= data.goods[10].href %>' xtitle='<%= data.goods[10].title %>' price='<%= data.goods[10].price %>'>
+              <%= data.goods[10].description %>
+            </x-list-item>
+            <x-list-item image='<%= data.goods[11].image %>' href='<%= data.goods[11].href %>' xtitle='<%= data.goods[11].title %>' price='<%= data.goods[11].price %>'>
+              <%= data.goods[11].description %>
+            </x-list-item>
+            <x-banner href='<%= data.banners[1].href %>' text='<%= data.banners[1].text %>'></x-banner>
+          </x-listing-main>
+          <x-listing-nav>
+            <x-categories items='<%= JSON.stringify(data.categories) %>'></x-categories>
+            <x-facets>
+              <x-facet xtitle='<%= data.facets[0].title %>' closed='<%= data.facets[0].closed %>'>
+                <x-price min='<%= data.facets[0].content.min %>' max='<%= data.facets[0].content.max %>' from='<%= data.facets[0].content.from %>' to='<%= data.facets[0].content.to %>'></x-price>
+              </x-facet>
+              <x-facet xtitle='<%= data.facets[1].title %>' closed='<%= data.facets[1].closed %>'>
+                <x-checkbox-list
+                  items='<%= JSON.stringify(data.facets[1].content.items) %>'
+                  limit='<%= data.facets[1].content.limit %>'
+                  <% if (data.facets[1].content.compact) { %>
+                    compact
+                  <% } %>
+                ></x-checkbox-list>
+              </x-facet>
+              <x-facet xtitle='<%= data.facets[2].title %>' closed='<%= data.facets[2].closed %>'>
+                <x-checkbox-list
+                  items='<%= JSON.stringify(data.facets[2].content.items) %>'
+                  limit='<%= data.facets[2].content.limit %>'
+                  <% if (data.facets[2].content.compact) { %>
+                    compact
+                  <% } %>
+                ></x-checkbox-list>
+              </x-facet>
+            </x-facets>
+          </x-listing-nav>
+        </x-listing>
+      </x-content>
+      <x-menu items='<%= JSON.stringify(data.menu.items) %>'></x-menu>
+      <x-footer />
+    </x-page>
+  </body>
+</html>

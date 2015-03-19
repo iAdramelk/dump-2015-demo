@@ -1,0 +1,21 @@
+:host {
+  display: block;
+  border-right: 1px solid #999;
+}
+
+.link {
+  display: block;
+  padding: 20px 20px 16px;
+  text-decoration: none;
+  color: #fff;
+}
+
+.link:hover {
+  color: #333;
+  background: #ddd;
+}
+
+:host([current]) .link {
+  color: #333;
+  background: #ddd;
+}

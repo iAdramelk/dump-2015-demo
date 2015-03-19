@@ -1,0 +1,14 @@
+:host {
+  display: block;
+  background: #808080;
+}
+
+.content {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 1120px;
+  margin: 0 auto;
+  border-left: 1px solid #999;
+}

@@ -1,0 +1,32 @@
+<link rel="import" href="../../bower_components/polymer/polymer.html">
+
+<polymer-element name="x-categories" attributes="items">
+  <template>
+    <link rel="stylesheet" href="categories.css">
+    <div class="title">Категории</div>
+    <template repeat="{{ item in items }}">
+      <template if="{{item.current}}">
+        <x-categories-item href="{{item.href}}" text="{{item.text}}" level="{{item.level}}" current />
+      </template>
+      <template if="{{!item.current}}">
+        <x-categories-item href="{{item.href}}" text="{{item.text}}" level="{{item.level}}" />
+      </template>
+    </template>
+  </template>
+  <script src="categories.js"></script>
+</polymer-element>
+
+<polymer-element name="x-categories-item" attributes="href text current level" noscript>
+  <template>
+      <link rel="stylesheet" href="categories-item.css">
+
+      <template if="{{!current}}">
+        <a href="{{href}}" class="link link_level_{{level}}">{{text}}</a>
+      </template>
+      <template if="{{current}}">
+        <span class="link link_level_{{level}} is-current">{{text}}</span>
+      </template>
+      </template>
+  </template>
+  <script src="categories-item.js"></script>
+</polymer-element>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Коктельные платья</title>
+    <meta charset='UTF-8'>
+    <script src='../bower_components/webcomponentsjs/webcomponents.js'></script>
+    <link rel='import' href='../build/base.html'>
+  </head>
+  <body unresolved>
+    <x-page>
+      <x-header>
+        <x-search action='<%= data.search.action %>' query='<%= data.search.query %>' />
+      </x-header>
+      <x-menu items='<%= JSON.stringify(data.menu.items) %>'></x-menu>
+      <x-content>
+        <x-listing xtitle='<%= data.title %>'>
+          <x-breadcrumbs>
+            <x-breadcrumbs-item href='<%= data.breadcrumbs[0].href %>' text='<%= data.breadcrumbs[0].text %>'></x-breadcrumbs-item>
+            <x-breadcrumbs-item href='<%= data.breadcrumbs[1].href %>' text='<%= data.breadcrumbs[1].text %>'></x-breadcrumbs-item>
+          </x-breadcrumbs>
+          <x-listing-main>
+            <x-article text='<%= data.article.text %>'></x-article>
+          </x-listing-main>
+          <x-listing-nav>
+            <x-preview-item image='<%= data.goods[0].image %>' href='<%= data.goods[0].href %>' xtitle='<%= data.goods[0].title %>' price='<%= data.goods[0].price %>'></x-preview-item>
+            <x-preview-item image='<%= data.goods[1].image %>' href='<%= data.goods[1].href %>' xtitle='<%= data.goods[1].title %>' price='<%= data.goods[1].price %>'></x-preview-item>
+            <x-preview-item image='<%= data.goods[2].image %>' href='<%= data.goods[2].href %>' xtitle='<%= data.goods[2].title %>' price='<%= data.goods[2].price %>'></x-preview-item>
+          </x-listing-nav>
+        </x-listing>
+      </x-content>
+      <x-menu items='<%= JSON.stringify(data.menu.items) %>'></x-menu>
+      <x-footer />
+    </x-page>
+  </body>
+</html>

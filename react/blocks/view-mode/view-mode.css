@@ -1,0 +1,16 @@
+.view-mode {}
+
+.view-mode__item {
+  display: inline-block;
+  margin: 0 3px;
+}
+
+.view-mode__link {
+  display: block;
+  padding: 6px 5px 4px;
+}
+
+.view-mode__link.is-current {
+  background: $bannerBg;
+  color: $bannerText;
+}

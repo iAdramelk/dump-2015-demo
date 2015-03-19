@@ -1,0 +1,13 @@
+:host {
+  display: block;
+}
+
+.list {
+  margin-bottom: -10px;
+}
+
+:host([compact]) .list {
+  -webkit-columns: 2;
+  -moz-columns: 2;
+  columns: 2;
+}

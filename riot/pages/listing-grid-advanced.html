@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <title>Коктельные платья</title>
+      <meta charset="UTF-8">
+      <link rel="stylesheet" href="../build/style.css">
+      <script src="../build/script.js"></script>
+    </head>
+    <body>
+      <x-page>
+        <x-header>
+          <x-search action="{data.search.action}" query="{data.search.query}"></x-search>
+        </x-header>
+        <x-menu items="{data.menu.items}"></x-menu>
+        <x-content>
+          <x-listing>
+            <x-listing-header>
+              <x-listing-breadcrumbs>
+                <x-breadcrumbs>
+                  <x-breadcrumbs-item href="{data.breadcrumbs[0].href}" text="{data.breadcrumbs[0].text}"></x-breadcrumbs-item>
+                  <breadcrumbs-item href="{data.breadcrumbs[1].href}" text="{data.breadcrumbs[1].text}"></x-breadcrumbs-item>
+                </x-breadcrumbs>
+              </x-listing-breadcrumbs>
+              <x-listing-title title="{data.title}"></x-listing-title>
+              <x-listing-sorting>
+                <x-article-lead href="{data.article.href}" text="{data.article.lead}"></x-article-lead>
+              </x-listing-sorting>
+            </x-listing-header>
+            <x-listing-content>
+              <x-listing-main advanced="{true}">
+                <x-preview-item href="{data.goods[0].href}" title="{data.goods[0].title}" image="{data.goods[0].image}" price="{data.goods[0].price}"></x-preview-item>
+                <x-preview-item href="{data.goods[1].href}" title="{data.goods[1].title}" image="{data.goods[1].image}" price="{data.goods[1].price}"></x-preview-item>
+                <x-banner href="{data.banners[0].href}" text="{data.banners[0].text}" grid={true}></x-banner>
+                <x-preview-item href="{data.goods[2].href}" title="{data.goods[2].title}" image="{data.goods[2].image}" price="{data.goods[2].price}"></x-preview-item>
+                <x-banner href="{data.banners[1].href}" text="{data.banners[1].text}" grid={true}></x-banner>
+                <x-preview-item href="{data.goods[3].href}" title="{data.goods[3].title}" image="{data.goods[3].image}" price="{data.goods[3].price}"></x-preview-item>
+                <x-preview-item href="{data.goods[4].href}" title="{data.goods[4].title}" image="{data.goods[4].image}" price="{data.goods[4].price}"></x-preview-item>
+                <x-preview-item href="{data.goods[5].href}" title="{data.goods[5].title}" image="{data.goods[5].image}" price="{data.goods[5].price}"></x-preview-item>
+                <x-preview-item href="{data.goods[6].href}" title="{data.goods[6].title}" image="{data.goods[6].image}" price="{data.goods[6].price}"></x-preview-item>
+                <x-preview-item href="{data.goods[7].href}" title="{data.goods[7].title}" image="{data.goods[7].image}" price="{data.goods[7].price}"></x-preview-item>
+                <x-banner href="{data.banners[2].href}" text="{data.banners[2].text}" grid={true}></x-banner>
+                <x-preview-item href="{data.goods[8].href}" title="{data.goods[8].title}" image="{data.goods[8].image}" price="{data.goods[8].price}"></x-preview-item>
+                <x-preview-item href="{data.goods[9].href}" title="{data.goods[9].title}" image="{data.goods[9].image}" price="{data.goods[9].price}"></x-preview-item>
+                <x-preview-item href="{data.goods[10].href}" title="{data.goods[10].title}" image="{data.goods[10].image}" price="{data.goods[10].price}"></x-preview-item>
+                <x-preview-item href="{data.goods[11].href}" title="{data.goods[11].title}" image="{data.goods[11].image}" price="{data.goods[10].price}"></x-preview-item>
+              </x-listing-main>
+              <x-listing-nav>
+                <x-categories items="{data.categories}"></x-categories>
+                <x-help items="{data.help.items}" title="{data.help.title}"></x-help>
+              </x-listing-nav>
+            </x-listing-content>
+          </x-listing>
+        </x-content>
+        <x-menu items="{data.menu.items}"></x-menu>
+        <x-footer />
+      </x-page>
+
+      <script>riot.mount('*');</script>
+    </body>
+  </html>

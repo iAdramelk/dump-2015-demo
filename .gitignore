@@ -1,0 +1,84 @@
+# Numerous always-ignore extensions
+*.diff
+*.err
+*.orig
+*.log
+*.rej
+*.swo
+*.swp
+*.vi
+*~
+*.sass-cache
+
+# OS or Editor folders
+.DS_Store
+._*
+Thumbs.db
+.cache
+.project
+.settings
+.tmproj
+nbproject
+*.sublime-project
+*.sublime-workspace
+
+# Dreamweaver added files
+_notes
+dwsync.xml
+
+# Komodo
+*.komodoproject
+.komodotools
+
+# Espresso
+*.esproj
+*.espressostorage
+
+# Rubinius
+*.rbc
+
+# Folders to ignore
+.git
+.hg
+.svn
+.CVS
+intermediate
+.idea
+
+# Node.JS
+pids
+logs
+results
+node_modules
+npm-debug.log
+
+# Vagrant files
+.Vagrant
+
+# Other
+.tern-port
+
+
+# Static demo
+
+static/node_modules
+
+
+# React demo
+
+react/bower_components
+react/node_modules
+react/pages
+react/build
+
+# Riot demo
+
+riot/bower_components
+riot/node_modules
+riot/build
+
+# Polymer demo
+
+polymer/bower_components
+polymer/node_modules
+polymer/build
