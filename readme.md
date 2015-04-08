@@ -2,6 +2,10 @@
 
 Секция FrontTalks, Иванов Алексей, <a href="https://evilmartians.com">Злые Марсиане</a>
 
+### Видео доклада
+
+- [https://vimeo.com/123930979] (https://vimeo.com/123930979)
+
 ### Слайды доклада
 
 - [https://www.slideshare.net/secret/lTurPvVXKIXEGn](https://www.slideshare.net/secret/lTurPvVXKIXEGn)
